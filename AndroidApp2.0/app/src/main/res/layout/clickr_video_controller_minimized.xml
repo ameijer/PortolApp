@@ -1,0 +1,113 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/clickrPanel"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/maximizeButton"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/seaPink"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
+        android:text="^"
+        android:textColor="@color/black" />
+
+    <!--<ImageButton-->
+    <!--android:id="@+id/clickr_back_button"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="left|top"-->
+    <!--android:contentDescription="back"-->
+    <!--android:layout_below="@id/maximizeButton"-->
+    <!--android:src="@drawable/fast_backwards"/>-->
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/buttons"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/maximizeButton"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/closebuttonsmall"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+
+            android:background="@color/seaPink"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:text="X"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:id="@+id/cover"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:padding="20dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/beach" />
+
+        <!--<ImageButton-->
+        <!--android:id="@+id/go_left_button"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:contentDescription="PlayPause"-->
+        <!--android:src="@drawable/fast_backwards"/>-->
+        <LinearLayout
+            android:id="@+id/buttonHolder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/play_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:contentDescription="PlayPause"
+                android:padding="20dp"
+                android:src="@drawable/play" />
+
+            <ImageButton
+                android:id="@+id/pause_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:contentDescription="PlayPause"
+                android:padding="20dp"
+                android:src="@drawable/pause" />
+
+            <ImageButton
+                android:id="@+id/stop_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:contentDescription="stop"
+                android:padding="20dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/stop" />
+        </LinearLayout>
+        <!--<ImageButton-->
+        <!--android:id="@+id/go_right_button"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:contentDescription="PlayPause"-->
+        <!--android:src="@drawable/fast_forwards"/>-->
+        <Button
+            android:id="@+id/changePlatform"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="Change Platform" />
+    </LinearLayout>
+</RelativeLayout>

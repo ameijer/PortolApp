@@ -1,0 +1,44 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/clickrPanel"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/textPair_back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|top"
+        android:contentDescription="back"
+        android:src="@drawable/fast_backwards" />
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/text_pair_options"
+        android:layout_width="match_parent"
+        android:layout_height="1.2in"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/text_pair"
+            android:layout_width="1in"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginBottom="18dp"
+            android:background="@drawable/edittext_rounded"
+            android:gravity="center"
+            android:textColor="@color/portolRegister" />
+
+        <Button
+            android:id="@+id/pair_submit"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:background="@drawable/submit_rounded"
+            android:text="Pair"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+</FrameLayout>

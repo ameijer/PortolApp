@@ -1,0 +1,45 @@
+[
+    {
+        "outputFile": "/home/alex/Desktop/to_sanitize/PortolApp-Android/AndroidApp2.0/core/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values/values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 242,
+                    "endColumn": 58,
+                    "endOffset": 296
+                },
+                "from": {
+                    "file": "/home/alex/Desktop/to_sanitize/PortolApp-Android/AndroidApp2.0/core/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 242,
+                        "endColumn": 58,
+                        "endOffset": 296
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 301,
+                    "endColumn": 62,
+                    "endOffset": 359
+                },
+                "from": {
+                    "file": "/home/alex/Desktop/to_sanitize/PortolApp-Android/AndroidApp2.0/core/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 301,
+                        "endColumn": 62,
+                        "endOffset": 359
+                    }
+                }
+            }
+        ]
+    }
+]

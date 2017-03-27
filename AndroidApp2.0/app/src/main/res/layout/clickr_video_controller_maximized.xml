@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/largeclickrPanel"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+    <Button
+        android:id="@+id/minimizebutton"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/seaPink"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
+        android:text="V"
+        android:textColor="@color/black" />
+    <!--<include-->
+    <!--android:id="@+id/clickr_large_button_root"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_weight="40"-->
+    <!--layout="@layout/item_focus" />-->
+    <FrameLayout
+        android:id="@+id/clickritemfocus"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="40" />
+
+    <FrameLayout
+        android:id="@+id/moviefaxlayoutroot"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="30" />
+
+    <SeekBar
+        android:id="@+id/seekr"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10" />
+
+    <include
+        android:id="@+id/clickr_large_button_root"
+        layout="@layout/clickr_control_bar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20" />
+
+
+</LinearLayout>

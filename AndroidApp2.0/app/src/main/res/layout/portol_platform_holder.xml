@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/seaPink">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Your Platforms"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <!--<View-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="3dp"-->
+    <!--android:background="@color/white"/>-->
+
+    <!--&lt;!&ndash;<android.support.v7.widget.RecyclerView&ndash;&gt;-->
+    <!--&lt;!&ndash;android:padding="10sp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:orientation="horizontal"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:id="@+id/hrlist_recycler_view"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="70dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;/>&ndash;&gt;-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="40dp">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Available Portols"-->
+    <!--android:textSize="20sp"-->
+    <!--android:textColor="@color/white"/>-->
+
+    <!--</LinearLayout>-->
+    <!--<View-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="3dp"-->
+    <!--android:background="@color/white"/>-->
+</FrameLayout>

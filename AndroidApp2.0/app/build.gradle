@@ -1,0 +1,118 @@
+apply plugin: 'com.android.application'
+//apply plugin: 'nu.studer.credentials'
+apply plugin: 'maven'
+apply plugin: 'git-dependencies'
+
+repositories {
+    mavenCentral()
+    maven {
+
+
+        url "https://raw.githubusercontent.com/ameijer/portol/mvn-repo/"
+
+
+    }
+    maven {
+        url "https://jitpack.io"
+    }
+}
+
+configurations {
+    compile.exclude module: 'javax.inject'
+
+}
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion '25.0.0'
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+
+    packagingOptions {
+        exclude 'LICENSE.txt'
+        exclude 'META-INF/services/org.glassfish.jersey.internal.spi.AutoDiscoverable'
+        exclude 'META-INF/services/org.glassfish.jersey.internal.spi.ForcedAutoDiscoverable'
+        exclude 'META-INF/services/javax.annotation.processing.Processor'
+
+    }
+
+    defaultConfig {
+        applicationId "portol.com.portol"
+        minSdkVersion 15
+        targetSdkVersion 22
+        multiDexEnabled = true
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:22.2.0'
+    compile 'com.android.support:support-v4:22.2.0'
+    compile 'in.srain.cube:grid-view-with-header-footer:1.0.12'
+
+    compile project(":hollyviewpager")
+    compile project(":core")
+    compile project(":layouts")
+    //compile project(":rushandroid")
+    compile project(":ProgressWheel")
+    compile project(":common")
+    compile project(":Java-WebSocket")
+    // compile 'io.realm:realm-android:0.80.3'
+    // compile 'com.android.support:support-v7:22.2.0'
+    //compile 'com.github.Todd-Davies:ProgressWheel:1.1'
+    compile 'com.android.support:recyclerview-v7:+'
+    compile 'com.fasterxml.jackson.core:jackson-core:2.5.3'
+    compile 'com.fasterxml.jackson.core:jackson-annotations:2.5.3'
+    compile 'com.fasterxml.jackson.core:jackson-databind:2.5.3'
+    compile 'org.mongojack:mongojack:2.3.0'
+    compile group: 'org.bitcoinj', name: 'bitcoinj-core', version: '0.12'
+    compile 'commons-codec:commons-codec:1.9'
+    compile 'com.google.zxing:android-integration:3.2.0'
+    compile 'me.dm7.barcodescanner:zbar:1.7.1'
+    compile 'com.nineoldandroids:library:2.4.0'
+    //compile group: 'com.lorentzos.swipecards', name: 'library', version: '1.0.8'
+    compile 'com.github.kikoso:SwipeableCards:1.1-RELEASE@aar'
+    compile 'com.google.android.gms:play-services:7.3.0'
+    compile 'com.yalantis:sidemenu:1.0'
+    compile 'com.github.ozodrukh:CircularReveal:1.0.4'
+    compile 'org.apache.commons:commons-collections4:4.0'
+    //compile 'javax.xml.bind:jaxb-api:2.2.4'
+    //compile 'com.couchbase.lite:couchbase-lite-android:1.1.0'
+    compile 'com.android.support:multidex:1.0.0'
+
+    //compile 'com.android.support:appcompat-v7:21.0.3'
+    //compile 'org.lucasr.twowayview:twowayview:0.1.4'
+    compile group: 'com.googlecode.mp4parser', name: 'isoparser', version: '1.0.6'
+    compile group: 'org.glassfish.jersey.media', name: 'jersey-media-sse', version: '2.16'
+    //fuck gradle and fuck google
+    //compile 'com.portol:portolData:0.0.1-SNAPSHOT'
+    // compile files('libs/portolData.jar')
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.0'
+}
+
+android.packagingOptions {
+    exclude 'META-INF/DEPENDENCIES.txt'
+    exclude 'META-INF/LICENSE.txt'
+    exclude 'META-INF/NOTICE.txt'
+    exclude 'META-INF/NOTICE'
+    exclude 'META-INF/LICENSE'
+    exclude 'META-INF/ASL2.0'
+    exclude 'META-INF/DEPENDENCIES'
+    exclude 'META-INF/notice.txt'
+    exclude 'META-INF/license.txt'
+    exclude 'META-INF/dependencies.txt'
+    exclude 'META-INF/LGPL2.1'
+}

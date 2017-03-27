@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/minimzeButton"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:background="@color/seaPink"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
+        android:text="V"
+        android:textColor="@color/black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/minimzeButton"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_weight="30"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|top"
+                android:singleLine="true"
+                android:text="New Connection" />
+
+            <ImageButton
+                android:id="@+id/addDevice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:background="@null"
+                android:scaleType="centerInside"
+                android:src="@drawable/add_device" />
+
+        </LinearLayout>
+        <!--<ListView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:id="@+id/hist_list"></ListView>-->
+
+        <org.lucasr.twowayview.widget.TwoWayView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/horizontalContentList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="70"
+            android:orientation="horizontal"
+            app:twowayview_layoutManager="ListLayoutManager" />
+    </LinearLayout>
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:drawSelectorOnTop="false"-->
+
+</RelativeLayout>

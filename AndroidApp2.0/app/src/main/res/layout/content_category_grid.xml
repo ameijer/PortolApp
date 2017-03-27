@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.florent37.hollyviewpager.HollyViewGridPager xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/hollyViewGridPager"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnWidth="1.5in"
+    android:gravity="center"
+    android:horizontalSpacing="4dp"
+    android:numColumns="auto_fit"
+    android:paddingTop="0dp"
+    android:stretchMode="columnWidth"
+    android:verticalSpacing="4dp" />

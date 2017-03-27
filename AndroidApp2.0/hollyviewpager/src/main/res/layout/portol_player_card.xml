@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/playercard"
+        app:cardElevation="9dp"
+        app:cardCornerRadius="9dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/player_frame"
+            android:orientation="vertical"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:id="@+id/player_cover"
+                android:layout_height="150dp"
+                android:layout_width="wrap_content"
+                />
+
+            <LinearLayout
+                android:id="@+id/player_textHolder"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:background="@android:color/transparent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/player_name"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:padding="4dp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

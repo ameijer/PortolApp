@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+    <LinearLayout
+        android:id="@+id/buttonp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="70"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <ImageButton
+            android:id="@+id/large_clickr_play"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="33"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:scaleType="centerInside"
+            android:src="@drawable/play" />
+
+        <ImageButton
+            android:id="@+id/large_clickr_pause"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="33"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:scaleType="centerInside"
+            android:src="@drawable/pause" />
+
+        <ImageButton
+            android:id="@+id/large_clickr_stop"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="33"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:scaleType="centerInside"
+            android:src="@drawable/stop" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="30"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <SeekBar
+            android:id="@+id/vol_control"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="70" />
+
+        <ImageView
+            android:id="@+id/vol_icon"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="30"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:src="@drawable/speaker" />
+
+
+    </LinearLayout>
+</LinearLayout>

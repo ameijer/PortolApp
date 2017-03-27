@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AndroidApp2.0.iml" filepath="$PROJECT_DIR$/AndroidApp2.0.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java-WebSocket/Java-WebSocket.iml" filepath="$PROJECT_DIR$/Java-WebSocket/Java-WebSocket.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ProgressWheel/ProgressWheel.iml" filepath="$PROJECT_DIR$/ProgressWheel/ProgressWheel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common/common.iml" filepath="$PROJECT_DIR$/common/common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/core/core.iml" filepath="$PROJECT_DIR$/core/core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hollyviewpager/hollyviewpager.iml" filepath="$PROJECT_DIR$/hollyviewpager/hollyviewpager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/layouts/layouts.iml" filepath="$PROJECT_DIR$/layouts/layouts.iml" />
+    </modules>
+  </component>
+</project>

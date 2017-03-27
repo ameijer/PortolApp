@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/action_bar_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/action_bar"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center|left"
+        android:text="VueScape"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/portolBannerHolder"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/action_bar">
+
+        <!--<ImageView-->
+        <!--android:id="@+id/portolBanner"-->
+        <!--android:src="@drawable/portol_logo_flat"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="left"-->
+        <!--android:background="@color/action_bar"-->
+        <!--/>-->
+
+        <RelativeLayout
+            android:id="@+id/loginRoot"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:background="@color/action_bar">
+
+            <Button
+                android:id="@+id/loginButton"
+                android:layout_width="160dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:text="Account" />
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/userInfoHolder"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:adjustViewBounds="true"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <LinearLayout
+                    android:id="@+id/textHolder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="70"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/unameTool"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#fff" />
+
+                    <TextView
+                        android:id="@+id/currencyTool"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#fff"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <com.portol.view.RoundedImageView
+                    android:id="@+id/usericTool"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="30"
+                    android:scaleType="centerCrop" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>

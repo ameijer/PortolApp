@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/camera_frame"
+    android:layout_width="fill_parent"
+    android:layout_height="300dp"
+    android:layout_alignParentBottom="true"
+    android:gravity="center">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/camera_holder"
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"></RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/grid_horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:id="@+id/grid_vertical"
+            android:layout_width="0sp"
+            android:layout_height="fill_parent"
+            android:layout_weight="15"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/backButton"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:src="@drawable/fast_backwards" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
